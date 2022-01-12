@@ -1,0 +1,268 @@
+/* Basic Bookmark setup
+  <div class="bookmark"> <!--Bookmarks-->
+    <a href="https://pbx2-pbww-prod-pbww-cdn.getprintbox.com/media/productimage/24ac68ff-4529-4d75-8eff-29cd8c39600e/Blank%20Bookmarks_thumb_900x900"><h2>Bookmarks</h2></a>
+    <a href="#"><p class="bookmark-option">  </p></a>
+    <a href="#"><p class="bookmark-option">  </p></a>
+    <a href="#"><p class="bookmark-option">  </p></a>
+    <a href="#"><p class="bookmark-option">  </p></a>
+  </div> <!--Bookmarks--> */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif", serif;
+  font-family: "Oswald", sans-serif;
+}
+body {
+  background-image: url(https://i.ytimg.com/vi/5rqyfoPlGPE/maxresdefault.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 720px;
+}
+nav {
+  background-color: rgb(182, 125, 59);
+  position: fixed;
+  width: 100%;
+  box-shadow: 10px 5px 9px 5px #00000038;
+}
+.navlink {
+  display: inline;
+  padding: 15px 20px 15px 20px;
+  float: right;
+  font-size: 20px;
+  animation-name: navlink;
+  animation-duration: 0.5s;
+}
+.nav-home:hover {
+  background-color: burlywood;
+  padding: 15px 30px 15px 30px;
+  animation-name: navlink-hover;
+  animation-duration: 0.5s;
+}
+.navlink:hover {
+  background-color: burlywood;
+  padding: 15px 30px 15px 30px;
+  animation-name: navlink-hover;
+  animation-duration: 0.5s;
+}
+.nav-home {
+  display: inline;
+  padding: 15px 20px 15px 20px;
+  float: left;
+  font-size: 20px;
+  margin-left: 30px;
+  animation-name: navlink;
+  animation-duration: 0.5s;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+@keyframes navlink-hover {
+  0% {
+    padding: 15px 20px 15px 20px;
+  }
+  100% {
+    padding: 15px 30px 15px 30px;
+    background-color: burlywood;
+  }
+}
+@keyframes navlink {
+  0% {
+    padding: 15px 30px 15px 30px;
+    background-color: burlywood;
+  }
+  100% {
+    padding: 15px 20px 15px 20px;
+  }
+}
+#main-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(182, 125, 59, 0.795);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 5px 9px 5px #00000038;
+}
+h1 {
+  padding: 50px 120px 20px 120px;
+  text-decoration: underline;
+  font-size: 40px;
+}
+.menu-option {
+  padding: 10px 10px 10px 10px;
+  margin: 10px 0px 0px 10px;
+  background-color: rgb(192, 147, 88);
+  margin: 10px 20px 10px 20px;
+  animation-name: menu-hover;
+  animation-duration: 0.5s;
+}
+.menu-option-4 {
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(192, 147, 88);
+  margin: 10px 20px 40px 20px;
+  animation-name: menu-hover;
+  animation-duration: 0.5s;
+}
+.menu-option:hover {
+  background-color: burlywood;
+  animation-name: menu-hover-hover;
+  animation-duration: 0.3s;
+  border-radius: 5px;
+  letter-spacing: 3px;
+}
+.menu-option-4:hover {
+  background-color: burlywood;
+  animation-name: menu-hover-hover;
+  animation-duration: 0.3s;
+  border-radius: 5px;
+  letter-spacing: 3px;
+}
+@keyframes menu-hover-hover {
+  0% {
+    background-color: rgb(192, 147, 88);
+    border-radius: 0px;
+    letter-spacing: 0px;
+  }
+  100% {
+    background-color: burlywood;
+    border-radius: 5px;
+    letter-spacing: 3px;
+  }
+}
+@keyframes menu-hover {
+  0% {
+    background-color: burlywood;
+    border-radius: 5px;
+    letter-spacing: 3px;
+  }
+  100% {
+    background-color: rgb(192, 147, 88);
+    border-radius: 0px;
+  }
+}
+#barovia-sect {
+  text-align: center;
+  padding-top: 30px;
+}
+.map-of-barovia {
+  width: 1000px;
+}
+.body-layer {
+  background-color: rgba(247, 229, 179, 0.788);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.story-lore-headings {
+  padding: 30px 0px 10px 0px;
+  text-decoration: underline;
+}
+li {
+  text-align: left;
+  padding: 10px 0px 10px 0px;
+  margin: 0px 20%;
+  list-style: none;
+  font-size: 20px;
+}
+.bookmark-location {
+  padding: 60px 0px 0px 0px;
+}
+.bookmark {
+  background-color: rgb(182, 125, 59);
+  position: fixed;
+  top: 10%;
+  left: 0;
+  padding: 10px 10px 10px 0px;
+  border: 5px;
+  border-color: rgb(182, 125, 59);
+  border-radius: 0px 10px 10px 0px;
+  text-align: center;
+  animation-name: bookmark-hover-off;
+  animation-duration: 0.3s;
+  box-shadow: 5px 3px 9px 3px #00000038;
+}
+.bookmark:hover {
+  padding: 10px 20px 10px 20px;
+  border-radius: 0px 10px 10px 0px;
+  animation-name: bookmark-hover;
+  animation-duration: 0.3s;
+  box-shadow: 5px 3px 9px 3px #00000038;
+}
+@keyframes bookmark-hover {
+  0% {
+    background-color: rgb(182, 125, 59);
+    position: fixed;
+    top: 10%;
+    left: 0;
+    padding: 10px 10px 10px 0px;
+    border-color: rgb(182, 125, 59);
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+    box-shadow: 5px 3px 9px 3px #00000038;
+  }
+  100% {
+    padding: 10px 20px 10px 20px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 5px 3px 9px 3px #00000038;
+  }
+}
+
+@keyframes bookmark-hover-off {
+  0% {
+    padding: 10px 20px 10px 20px;
+    border-radius: 0px 10px 10px 0px;
+  }
+  100% {
+    background-color: rgb(182, 125, 59);
+    position: fixed;
+    top: 10%;
+    left: 0;
+    padding: 10px 10px 10px 0px;
+    border-color: rgb(182, 125, 59);
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+  }
+}
+.bookmark-option {
+  background-color: rgb(182, 125, 59);
+  animation-name: bookmark-option;
+  animation-duration: 0.5s;
+  padding: 5px 0px 5px 0px;
+  margin: 0px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.bookmark-option:hover {
+  background-color: burlywood;
+  animation-name: bookmark-option;
+  animation-duration: 0.3s;
+  border-radius: 5px;
+}
+@keyframes bookmark-option {
+  0% {
+    background-color: rgb(182, 125, 59);
+    border-radius: 5px;
+  }
+  100% {
+    background-color: burlywood;
+    border-radius: 5px;
+  }
+}
+#character-sect{
+  text-align: center;
+  padding-top: 50px;
+}
+.character-heading{
+  padding-bottom: 20px;
+}
+.character-img{
+  width: 400px;
+  padding-bottom: 20px;
+}
